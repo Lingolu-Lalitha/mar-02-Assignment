@@ -1,0 +1,46 @@
+a=[]
+m=int(input("enter number of rows:"))
+n=int(input("enter number of columns:"))
+for i in range(m):
+    row=[]
+    for j in range(n):
+        row.append(int(input()))
+    a.append(row)
+print(a)
+b=[]
+m=int(input("enter number of rows:"))
+n=int(input("enter number of rows:"))
+for i in range(m):
+    row=[]
+    for j in range(n):
+        row.append(int(input()))
+    b.append(row)
+print(b)
+result=[[0,0],[0,0]]
+for i in range(m):
+    for j in range(n):
+        for k in range(len(b)):
+            result[i][j]=a[i][k]*b[k][j]
+for i in range(m):
+    for j in range(n):
+        print(result[i][j],end=' ')
+    print()    
+  output-
+  enter number of rows:2
+  enter number of columns:2
+  1
+  2
+  3
+  4
+  [[1,2],[3,4]]
+  enter number of rows:2
+  enter number of columns:2
+  2
+  4
+  6
+  8
+  12 16
+  24 32
+        
+        
+        
