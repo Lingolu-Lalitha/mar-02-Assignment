@@ -1,0 +1,45 @@
+a=[]
+m=int(input("enter a row:"))
+n=int(input("enter a column:"))
+for i in range(m):
+    row=[]
+    for j in range(n):
+        row.append(int(input()))
+    a.append(row)
+print(a)
+b=[]
+m=int(input("enter a row:"))
+n=int(input("enter a column:"))
+for i in range(m):
+    row=[]
+    for j in range(n):
+        row.append(int(input()))
+    b.append(row)
+print(b)
+result=[[0,0],[0,0]]
+for i in range(m):
+    for j in range(n):
+        result[i][j]=a[i][j]+b[i][j]
+for i in range(m):
+    for j in range(n):
+        print(result[i][j],end=' ')
+    print()
+OUTPUT:
+enter a row:2
+enter a column:2
+1
+3
+6
+8
+[[1,3],[6,8]]
+enter a row:2
+enter a column:2
+1
+2
+5
+6
+[[1,2],[5,6]]
+2 5
+11 14
+
+    
